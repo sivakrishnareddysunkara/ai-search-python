@@ -1,0 +1,6 @@
+streamlit
+pyyaml
+requests
+azure-identity
+azure-keyvault-keys
+azure-search-documents
