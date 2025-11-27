@@ -1,0 +1,22 @@
+{
+  "storage": {
+    "resourceId": "/subscriptions/50cf0a46-a844-41a9-a708-8a9ac2f0eecc/resourceGroups/rg-aml-test-demo2/providers/Microsoft.Storage/storageAccounts/searchcmektest",
+    "container": "test"
+  },
+  "keyVault": {
+    "uri": "https://testcmeksearch.vault.azure.net",
+    "keyName": "searchcmek"
+  },
+  "indexes": [
+    { "name": "my-secure-index-a" },
+    { "name": "my-secure-index-b" }
+  ],
+  "datasources": [
+    { "name": "ds-a", "container": "test" },
+    { "name": "ds-b", "container": "test" }
+  ],
+  "indexers": [
+    { "name": "ixr-a", "dataSourceName": "ds-a", "targetIndexName": "my-secure-index-a" },
+    { "name": "ixr-b", "dataSourceName": "ds-b", "targetIndexName": "my-secure-index-b" }
+  ]
+}
